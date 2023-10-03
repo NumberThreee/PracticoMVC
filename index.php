@@ -6,10 +6,11 @@
     <title>comentarios</title>
 </head>
 <body>
-    <a href="router.php"> Mostrar comentarios </a>
+    <a href="router.php?action=mostrar"> Mostrar comentarios ultimo comentario </a>
     
     <form action="router.php" method="POST">
-        <input type="text">
+        <input type="text" name="usuario" required>
+        <input type="text" name="comentario" placeholder="Deja tu comentario" required>
         <button type= "submit">Insertar comentario</button>
     </form>
     
